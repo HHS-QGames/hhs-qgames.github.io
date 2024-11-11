@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.game-screen-container {
+  display: grid;
+  grid-template-columns: [first] auto [line2] 10fr [end];
+  grid-template-rows: [row1-start] auto [row1-end] 7fr [third-line] 5fr [last-line];
+  row-gap: 10px;
+  column-gap: 10px;
+  height: 98vh;
+  padding: 1vh;
+}
+
+#draw-pile {
+  /* border: 1px solid black; */
+  min-width: fit-content;
+}
+.info-container {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  gap: 32px;
+}
+.scoreboard {
+  display: flex;
+  border: 1px solid 1px;
+  flex-grow: 2;
+  padding: 8px;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 8px;
+  justify-content: space-evenly;
+  background-color: rgb(235, 222, 222);
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+#player-info-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.player-info {
+  background-color: #dae8fc;
+  border: #6c8ebf solid 1px;
+  padding: 2%;
+}
+
+.current-turn {
+  background-color: #d5e8d4;
+  border: #82b366 solid 1px;
+}
+#restart-game-btn {
+  height: 100%;
+}
+.player-hand {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  grid-column: span 2;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#player-cards {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  /* border: 1px solid black; */
+  gap: 10px;
+  max-width: 100%;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.card {
+  user-select: none;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 12px;
+  height: 140px;
+  min-width: 100px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.destroy {
+  background-color: #f78484;
+}
+.gate {
+  background-color: rgb(137, 231, 223);
+}
+.measure {
+  background-color: rgb(236, 225, 64);
+}
+.card-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.card-symbol {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+
+#circuit-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: solid 1px black;
+  border-radius: 8px;
+  grid-column: span 2;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.qubit-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  gap: 10px;
+}
+.qubit-row-line {
+  flex-grow: 1;
+}
+
+
+
+/* #q0 {
+  background-color: #82b366;
+}
+#q1 {
+  background-color: aqua;
+}
+#q2 {
+  background-color:  blanchedalmond;
+}
+#q3 {
+  background-color: rebeccapurple;
+} */

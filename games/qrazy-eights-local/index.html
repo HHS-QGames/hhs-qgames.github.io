@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+
+    <title>Qrazy Eights Local</title>
+    <script type="module" src="src\components\Card.js"></script>
+    <script type="module" src="src\components\QuantumOperationCard.js"></script>
+    <script
+      type="module"
+      src="src\components\QuantumDestroyOperationCard.js"
+    ></script>
+    <script type="module" src="src\components\MeasurementCard.js"></script>
+    <script type="module" src="src\components\Hand.js"></script>
+    <script type="module" src="src\components\Qubit.js"></script>
+    <script type="module" src="src\components\Circuit.js"></script>
+    <script type="module" src="src\components\Gate.js"></script>
+    <script type="module" src="src\util\AssetFinder.js"></script>
+    <script type="module" src="src\main.js"></script>
+    <script type="module">
+      import { main, game } from "./src/main.js";
+      main();
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const confirmTurnBtn = document.getElementById("confirm-turn-btn");
+
+        confirmTurnBtn.addEventListener("click", function () {
+          console.log(game);
+          game.nextTurn();
+        });
+        const restartGameBtn = document.getElementById("restart-game-btn");
+        restartGameBtn.addEventListener("click", function () {
+          console.log("Restarting game");
+          main();
+        });
+        const drawPileBtn = document.getElementById("draw-pile");
+        drawPileBtn.addEventListener("click", function () {
+          game.currentPlayer.drawCard()
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="game-screen-container">
+      <div id="draw-pile">
+        <div class="card card-in-pile">
+          <div>Draw Pile</div>
+        </div>
+      </div>
+      <div class="info-container">
+        <div class="scoreboard">
+          <b>Scoreboard</b>
+          <div id="player-info-container"></div>
+        </div>
+        <button id="restart-game-btn">Restart Game</button>
+      </div>
+      <div class="player-hand">
+        <div id="player-cards"></div>
+        <button id="confirm-turn-btn">Next Turn</button>
+      </div>
+
+      <div id="circuit-container"></div>
+    </div>
+  </body>
+</html>
