@@ -22,13 +22,13 @@ title: QGames - Hub
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to QGames Hub! This is a place where you can find all the quantum games created by students at the Hague University of Applied Sciences.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/hub" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  treinDotDev
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
