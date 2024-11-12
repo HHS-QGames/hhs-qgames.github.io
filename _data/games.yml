@@ -1,0 +1,4 @@
+- name: "Qrazy Eights Local"
+  description: "A local multiplayer version of the classic card game Crazy Eights."
+  play_url: "/assets/games/qrazy-eights-local/index.html"
+  showcase_image: "/assets/images/qrazy-eights-showcase.png"

@@ -1,0 +1,15 @@
+---
+layout: default
+title: Games
+---
+
+<h1>Games</h1>
+<ul>
+  {% for game in site.data.games %}
+    <li>
+      <a href="/games/{{ game.name | slugify }}">{{ game.name }}</a>
+      <p>{{ game.description }}</p>
+      <img src="{{ game.showcase_image }}" alt="{{ game.name }} showcase image">
+    </li>
+  {% endfor %}
+</ul>
