@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: page
 title: Games
+permalink: /games/
 ---
 
-<h1>Games</h1>
 <ul>
   {% for game in site.data.games %}
     <li>
