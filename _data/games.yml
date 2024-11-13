@@ -1,0 +1,5 @@
+- name: "Qrazy Eights Local"
+  description: "Qrazy Eights is a quantum computing cards game. The game is inspired by the classic card game Crazy Eights. The goal of the game is to be the first player to get rid of all the cards in your hand."
+  play_url: "/assets/games/qrazy-eights-local/index.html"
+  showcase_image: "/assets/images/qrazy-eights-showcase.png"
+  genre: "Card Game"
