@@ -299,6 +299,9 @@ collections:
   games:
     output: true
     permalink: /games/:name
+  play:
+    output: true
+    permalink: /play/:name
 
 # Defaults
 defaults:
@@ -321,3 +324,11 @@ defaults:
       layout: single
       author_profile: true
       share: true
+  # _play
+  - scope:
+      path: ""
+      type: play
+    values:
+      layout: play
+      author_profile: false
+      share: false

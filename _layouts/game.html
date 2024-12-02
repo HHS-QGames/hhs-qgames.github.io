@@ -8,7 +8,7 @@ layout: single
   <p>{{ game.description }}</p>
   <p><strong>Genre:</strong> {{ game.genre | default: "Genre not available" }}</p>
   <p><strong>Release Date:</strong> {{ game.release_date | default: "Release date not available" }}</p>
-  <a href="{{ game.play_url }}" target="_blank">Play Now!</a>
+  <a href="{{ game.play_url }}">Play Now!</a>
   <br>
   <img src="{{ game.showcase_image }}" alt="{{ game.name }} showcase image">
 {% else %}
