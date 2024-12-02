@@ -2,7 +2,7 @@
 layout: single
 ---
 
-{% assign game = site.data.games | where: "name", page.name | first %}
+{% assign game = page.game %}
 
 {% if game %}
   <p>{{ game.description }}</p>
